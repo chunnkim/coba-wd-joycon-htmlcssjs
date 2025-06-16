@@ -1,0 +1,62 @@
+body {
+    justify-content: center;
+    
+
+.display-box {
+	background-color: #edf3f5;
+    font-size: 24px;
+    color: rgb(18, 144, 240);
+    padding-left: 32px;
+    padding-right: 32px;
+    font-weight: 600;
+    font-family: 'Poppins', 'Sans-serif';
+}
+}
+
+.joycon-container {
+    display: block;
+    justify-content: center;
+}
+.display-box {
+    background-color: white;
+}
+
+.text-output{
+    display: flex;
+    justify-content: center;
+
+.text-output input {
+    width: 480px;
+    height: 80px;
+    box-shadow: 0px 0px 8px grey;
+    box-shadow: 0px 0px 8px rgb(138, 167, 227);
+    margin-bottom: 32px;
+    margin-top: 32px;
+    border-radius: 24px;
+ 
+    width: 120px;
+    font-size: 24px;
+    padding: 32px;
+
+}
+}
+
+.joycon-pad-left-button:hover {
+    background-color: #c6e76d;
+}
+.joycon-pad-right-button:hover {
+    background-color: #dee799;
+}
+
+.desc{
+    display: block;
+    color: #ffffff;
+    margin-top: 32px;
+    font-family: 'Poppins','Sans-serif';
+}
+.desc p {
+    display: flex;
+    justify-content: end;
+    margin-right: 180px;
+    font-weight: 600;
+}
