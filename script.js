@@ -34,12 +34,12 @@ document.addEventListener('keyup', e => {
 });
 
 document.querySelectorAll('.btn').forEach(btn => {
-  // Mouse events
+  
   btn.addEventListener('mousedown', () => setActive(btn.id, true));
   btn.addEventListener('mouseup', () => setActive(btn.id, false));
   btn.addEventListener('mouseleave', () => setActive(btn.id, false));
 
-  // Touch events
+  
   btn.addEventListener('touchstart', e => {
     e.preventDefault();
     setActive(btn.id, true);
