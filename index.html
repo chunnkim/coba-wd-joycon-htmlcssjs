@@ -1,38 +1,32 @@
-<!DOCTYPE html>More actions
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JoyCon</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Virtual Controller</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="joycon-container">
-        <div class="text-output">
-            <input class="display-box" type="text" id="result" disabled />
-        </div>
-        <div class="joycon-pad">
-            <div class="joycon-pad-left">
-                <div class="joycon-pad-left-top">
-                    <input type="button" class="joycon-pad-left-button" value="up" onclick="display('up')">
-                </div>
-                <div class="joycon-pad-left-bottom">
-                    <input type="button" class="joycon-pad-left-button" value="left" onclick="display('left')">
-                    <input type="button" div class="joycon-pad-left-button" value="down" onclick="display('down')">
-                    <input type="button" class="joycon-pad-left-button" value="right" onclick="display('right')">
-                </div>
-            </div>
-            <div class="joycon-pad-right">
-                <input type="button" class="joycon-pad-right-button" value="B" onclick="display('B')">
-                <input type="button" class="joycon-pad-right-button" value="A" onclick="display('A')"> 
-            </div>
-        </div>
-        <div class="desc">
-            <p>23430213 - chun kim</p>
-            
-        </div>        
+
+  <!-- Layar status -->
+  <div id="display">&nbsp;</div>
+
+  <!-- Controller -->
+  <div class="controller">
+    <!-- D-Pad -->
+    <div class="dpad">
+      <button id="up" class="btn" style="grid-column:2;grid-row:1;">up</button>
+      <button id="left" class="btn" style="grid-column:1;grid-row:2;">left</button>
+      <button id="down" class="btn" style="grid-column:2;grid-row:2;">down</button>
+      <button id="right" class="btn" style="grid-column:3;grid-row:2;">right</button>
     </div>
-     <script src="script.js"></script>Add commentMore actions
+
+    <!-- Tombol A/B -->
+    <div class="actions">
+      <button id="b" class="btn action">B</button>
+      <button id="a" class="btn action">A</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
